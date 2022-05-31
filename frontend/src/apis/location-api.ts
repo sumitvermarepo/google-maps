@@ -9,6 +9,16 @@ const updateLocation = (id: string) => {
   return apiRequest.put(`/location/${id}`, {});
 }
 
+export const useGetAddresses = (address: string, shouldBeFetchAgain: boolean) => {
+  return useQuery(['get-address', shouldBeFetchAgain], async () => {
+    return apiRequest.get<any>(`/search?key=${address}`).then((response) => {
+      return response.data;
+    })
+  }, {
+    enabled: !!address
+  })
+}
+
 export const useAddNewLocation = () => {
   const queryClient = useQueryClient();
   return useMutation(addLocation, {

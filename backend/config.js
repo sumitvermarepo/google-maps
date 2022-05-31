@@ -5,5 +5,7 @@ export const config = {
   },
   mapsDb: {
     dbname :"location"
-  }
+  },
+  mapsbaseUrl: 'https://maps.googleapis.com',
+  mapApiKey: 'AIzaSyCArDKz9DCliDeahGKy5LHl11ZCR-qJTy4'
 }

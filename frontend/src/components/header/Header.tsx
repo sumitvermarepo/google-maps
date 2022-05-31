@@ -1,9 +1,8 @@
 /** @format */
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import { debounce } from "lodash";
-import { useGetAddresses } from "../../apis/map-api";
+import { useAddNewLocation, useGetAddresses } from "../../apis/location-api";
 import "./header.css";
-import { useAddNewLocation } from "../../apis/location-api";
 
 const google: any = window.google;
 var navbarGeocoder = new google.maps.Geocoder(); // initiliaze geocode.
