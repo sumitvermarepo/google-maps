@@ -7,17 +7,20 @@ Node:- 16
 
 ## Installation
 
-### Frontend
-```bash
-cd frontend
-```
-Read more about frontend in frontend readme.
+Use the package manager [nvm](https://github.com/nvm-sh/nvm) to install libraries.
 
-### Backend
 ```bash
-cd backend
+npm install
 ```
-Read more about backend in backend readme.
+
+## Start Project
+
+```bash
+npm run start
+```
+Runs the app in the development mode.\
+Open [http://localhost:8080/api/ping](http://localhost:8080/api/ping) to view it in the browser.
+it is return `server is running`
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

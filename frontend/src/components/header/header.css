@@ -1,0 +1,43 @@
+.header-container{
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #cdd7df;
+}
+
+.input-container{
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+input{
+  width: 100%;
+  height: 50px;
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+.input-label{
+  margin-right: 10px;
+}
+
+.suggestion-container{
+  box-sizing: border-box;
+  width: 50%;
+  position:absolute;
+  right: 0px;
+  top: 50px;
+  background: #fff;
+  border: 1px solid #ccc;
+  z-index: 9;
+}
+
+.suggestion{
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+.input-autocomplete-container {
+  width: 50%;
+}
