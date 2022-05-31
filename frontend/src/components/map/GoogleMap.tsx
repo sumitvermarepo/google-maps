@@ -10,7 +10,7 @@ import {
 
 const MAP_STYLE = {
   width: "100%",
-  height: "80%",
+  height: "100%",
 };
 
 const icons = {
